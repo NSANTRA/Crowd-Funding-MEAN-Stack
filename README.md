@@ -102,17 +102,7 @@ Solving this problem equips students with practical experience in developing rob
 
 ---
 
-## 8. Submission Guidelines
-
-- **Format:**
-  - Report: PDF format.
-  - Presentation: PowerPoint slides or PDF.
-- **Deadline:** Specify the date.
-- **Mode:** Submission via email or an online portal.
-
----
-
-## 10. References
+## 8. References
 
 1. Official MEAN Stack Documentation:
    - MongoDB: [https://www.mongodb.com/docs/](https://www.mongodb.com/docs/)
