@@ -111,7 +111,7 @@ Solving this problem equips students with practical experience in developing rob
 
 ---
 
-<!-- ## 9. References
+## 9. References
 
 1. Official MEAN Stack Documentation:
    - MongoDB: [https://www.mongodb.com/docs/](https://www.mongodb.com/docs/)
@@ -120,4 +120,3 @@ Solving this problem equips students with practical experience in developing rob
    - Node.js: [https://nodejs.org/en/docs](https://nodejs.org/en/docs)
 2. Tutorials on MEAN Stack:
    - [https://www.tutorialspoint.com/meanjs/index.htm](https://www.tutorialspoint.com/meanjs/index.htm)
-3. Research papers and articles on crowdfunding platforms. -->
