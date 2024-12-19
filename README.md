@@ -1,4 +1,4 @@
-# Project Guidelines: Crowdfunding Website using MEAN Stack
+# Project Guidelines: Crowd Funding Website using MEAN Stack
 
 ## 1. Introduction
 
