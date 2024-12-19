@@ -50,7 +50,6 @@ Solving this problem equips students with practical experience in developing rob
    - Angular for front-end development.
    - Node.js as the runtime environment.
    - GitHub for version control.
-   - Postman for testing APIs.
 
 3. **Experimentation/Implementation Process:**
    - **Phase 1:** Setting up the development environment and creating the project architecture.
@@ -102,7 +101,17 @@ Solving this problem equips students with practical experience in developing rob
 
 ---
 
-## 8. References
+## 8. Submission Guidelines
+
+- **Format:**
+  - Report: PDF.
+  - Presentation: PowerPoint.
+- **Deadline:** Not yet decided.
+- **Mode:** Submission via email.
+
+---
+
+<!-- ## 9. References
 
 1. Official MEAN Stack Documentation:
    - MongoDB: [https://www.mongodb.com/docs/](https://www.mongodb.com/docs/)
@@ -111,4 +120,4 @@ Solving this problem equips students with practical experience in developing rob
    - Node.js: [https://nodejs.org/en/docs](https://nodejs.org/en/docs)
 2. Tutorials on MEAN Stack:
    - [https://www.tutorialspoint.com/meanjs/index.htm](https://www.tutorialspoint.com/meanjs/index.htm)
-3. Research papers and articles on crowdfunding platforms.
+3. Research papers and articles on crowdfunding platforms. -->
