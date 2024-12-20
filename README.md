@@ -113,12 +113,12 @@ Solving this problem equips students with practical experience in developing rob
 
 ---
 
-## 9. Team Name
-- Neelotpal Santra
-- Sagar Mourya
-- Mansi Savaniya
-- Anjali Patel
-- Sunidhi Singh
+## 9. Team Members
+- Neelotpal Santra [@NSANTRA]
+- Sagar Mourya [@Coffee-Freak]
+- Mansi Savaniya [@mansisavaniya]
+- Anjali Patel [@Anjalipatel0705]
+- Sunidhi Singh [@SUNIDHI123-SINGH]
 
 ---
 
