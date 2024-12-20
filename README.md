@@ -114,18 +114,18 @@ Solving this problem equips students with practical experience in developing rob
 ---
 
 ## 9. Team Members
-- Neelotpal Santra [@NSANTRA]
-- Sagar Mourya [@Coffee-Freak]
-- Mansi Savaniya [@mansisavaniya]
-- Anjali Patel [@Anjalipatel0705]
-- Sunidhi Singh [@SUNIDHI123-SINGH]
+- Neelotpal Santra [https://github.com/NSANTRA]
+- Sagar Mourya [https://github.com/Coffee-Freak]
+- Mansi Savaniya [https://github.com/mansisavaniya]
+- Anjali Patel [https://github.com/Anjalipatel0705]
+- Sunidhi Singh [https://github.com/SUNIDHI123-SINGH]
 
 ---
 
 ## 10. References
 
 1. Official MEAN Stack Documentation:
-   - MongoDB: [https://www.mongodb.com/docs/](https://www.mongodb.com/docs/)
+   - MongoDB: [MongoDB Docs](https://www.mongodb.com/docs/)
    - Express.js: [https://expressjs.com/](https://expressjs.com/)
    - Angular: [https://angular.io/docs](https://angular.io/docs)
    - Node.js: [https://nodejs.org/en/docs](https://nodejs.org/en/docs)
