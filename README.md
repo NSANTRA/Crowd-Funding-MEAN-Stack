@@ -1,8 +1,6 @@
 # IgniFund: Crowd Funding Website using MEAN Stack
 
----
 # Project Guidelines
----
 
 ## 1. Introduction
 
