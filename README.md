@@ -127,7 +127,7 @@ Solving this problem equips students with practical experience in developing rob
 1. Official MEAN Stack Documentation:
    - [MongoDB Docs](https://www.mongodb.com/docs/)
    - [Express.js](https://expressjs.com/)
-   - [Angular ](https://angular.io/docs)
-   - [Node.js ](https://nodejs.org/en/docs)
+   - [Angular](https://angular.io/docs)
+   - [Node.js](https://nodejs.org/en/docs)
 2. Tutorials on MEAN Stack:
-   - [https://www.tutorialspoint.com/meanjs/index.htm](https://www.tutorialspoint.com/meanjs/index.htm)
+   - [MEAN JS](https://www.tutorialspoint.com/meanjs/index.htm)
