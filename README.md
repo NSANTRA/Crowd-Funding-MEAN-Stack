@@ -1,4 +1,4 @@
-# Project Guidelines: Crowdfunding Website using MEAN Stack
+# Project Guidelines: Crowd Funding Website using MEAN Stack
 
 ## 1. Introduction
 
@@ -57,7 +57,7 @@ Solving this problem equips students with practical experience in developing rob
    - **Phase 3:** Developing features for creating and managing campaigns.
    - **Phase 4:** Adding payment gateway integration for donations.
    - **Phase 5:** Testing and debugging the website for seamless user experience.
-   - **Phase 6:** Deploying the website on a hosting platform like Heroku or AWS.
+   - **Phase 6:** Deploying the website on a hosting platform like Vercel or Netlify.
 
 ---
 
