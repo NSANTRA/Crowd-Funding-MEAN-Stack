@@ -115,7 +115,16 @@ Solving this problem equips students with practical experience in developing rob
 
 ---
 
-## 9. References
+## 9. Team Name
+- Neelotpal Santra
+- Sagar Mourya
+- Mansi Savaniya
+- Anjali Patel
+- Sunidhi Singh
+
+---
+
+## 10. References
 
 1. Official MEAN Stack Documentation:
    - MongoDB: [https://www.mongodb.com/docs/](https://www.mongodb.com/docs/)
