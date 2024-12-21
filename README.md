@@ -16,7 +16,7 @@ The project will cover:
 - Campaign creation and management by users.
 - Donation functionality for backers.
 - Real-time campaign updates and analytics.
-- Responsive design and user experience.
+- Responsive design and user experience (innovative UI/UX).
 
 ---
 
