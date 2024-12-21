@@ -7,7 +7,7 @@
 ### Purpose
 The objective of this project is to design and develop a functional crowdfunding website using the MEAN stack. This project will allow students to learn full-stack web development and understand the functionality behind modern crowdfunding platforms.
 
-### Background
+### Overview
 Crowdfunding platforms connect project creators with potential backers, facilitating funding for innovative ideas and community-driven projects. Examples include Kickstarter and GoFundMe. The MEAN stack is an efficient framework for building web applications with consistent JavaScript language usage on both client and server sides.
 
 ### Scope
