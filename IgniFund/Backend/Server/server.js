@@ -4,7 +4,7 @@ const dbConfig = require('../DBConfig/dbconfig');
 const dotenv = require('dotenv');
 const path = require('path');
 const bodyParser = require('body-parser');
-const userRoutes = require('../Routes/userRoutes');
+const authRoutes = require('../Routes/authRoutes');
 const homeRoutes = require('../Routes/homeRoutes');
 
 // Connecting to MongoDB
@@ -24,11 +24,11 @@ app.set('views', path.join(__dirname, '../Views'));
 app.use(express.static(path.join(__dirname, '../Styles')));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Using User Routes
+// Using Home Routes
 app.use("/", homeRoutes);
 
 // Using User Routes
-app.use("/users", userRoutes);
+app.use("/users", authRoutes);
 
 // Listening on PORT
 app.listen(PORT, () => {

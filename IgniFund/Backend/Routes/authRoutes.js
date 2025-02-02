@@ -40,7 +40,8 @@ router.post('/signup', async (req, res) => {
 
 // Home Route (Signin Page)
 router.get('/signin', (req, res) => {
-    res.sendFile(path.join(__dirname, '../Pages', 'Signin.html'));
+    // res.sendFile(path.join(__dirname, '../Pages', 'Signin.html'));
+    res.render('Signin', { message: null });
 });
 
 // Signin Route
