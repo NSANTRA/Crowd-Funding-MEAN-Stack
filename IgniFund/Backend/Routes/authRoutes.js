@@ -47,13 +47,13 @@ router.get('/signin', (req, res) => {
 // Signin Route
 router.post("/signin", async (req, res) => {
     try {
-        const { Email, Password } = req.body;
+        const { EmailorUsername, Password } = req.body;
         
         // Log the received data
         console.log('Received Data:', req.body);
         
         // Find the user with the provided email
-        const user = await User.findOne({ Email });
+        const user = await User.findOne({ $or: [{Email: EmailorUsername}, {Username: EmailorUsername}] });
         
         // Check if the user exists
         if (!user) {
