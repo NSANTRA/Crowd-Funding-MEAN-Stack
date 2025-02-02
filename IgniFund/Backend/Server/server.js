@@ -18,7 +18,10 @@ const app = express();
 const PORT = process.env.PORT;
 
 // Application-Level Middlewares
-app.use(express.static(path.join(__dirname, '../Pages')));
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, '../Views'));
+// app.use(express.static(path.join(__dirname, '../Assets')));
+app.use(express.static(path.join(__dirname, '../Styles/')));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Using User Routes
