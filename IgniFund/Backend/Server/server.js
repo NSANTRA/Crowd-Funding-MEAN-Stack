@@ -17,10 +17,12 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT;
 
-// Application-Level Middlewares
+// Setting View Engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '../Views'));
-// app.use(express.static(path.join(__dirname, '../Assets')));
+
+// Application-Level Middlewares
+app.use(express.static(path.join(__dirname, '../Assets')));
 app.use(express.static(path.join(__dirname, '../Styles')));
 app.use(bodyParser.urlencoded({ extended: true }));
 
