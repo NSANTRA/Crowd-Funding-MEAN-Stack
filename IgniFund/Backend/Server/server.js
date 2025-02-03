@@ -23,6 +23,7 @@ app.set('views', path.join(__dirname, '../Views'));
 
 // Application-Level Middlewares
 app.use(express.static(path.join(__dirname, '../Assets')));
+app.use(express.static(path.join(__dirname, '../Scripts')));
 app.use(express.static(path.join(__dirname, '../Styles')));
 app.use(bodyParser.urlencoded({ extended: true }));
 
