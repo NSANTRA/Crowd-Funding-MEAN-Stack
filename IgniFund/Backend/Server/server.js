@@ -26,6 +26,8 @@ app.use(express.static(path.join(__dirname, '../Assets')));
 app.use(express.static(path.join(__dirname, '../Scripts')));
 app.use(express.static(path.join(__dirname, '../Styles')));
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Using Home Routes
 app.use("/", homeRoutes);

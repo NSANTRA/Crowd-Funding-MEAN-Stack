@@ -13,15 +13,15 @@ router.get('/signup', (req, res) => {
 router.post('/signup', async (req, res) => {
     try {
         const { First_Name, Last_Name, Username, Email, Password } = req.body;
-        
-        // Log the received data
-        console.log('Received Data:', req.body);
 
         let user = await User.findOne({ Username });
 
         if (user) {
-            return res.render('Signup', { message: "Username already exists!" });
+            res.render('Signup', { message: "Username already exists!" });
         }
+
+        // Log the received data
+        console.log('Received Data:', req.body);
         
         // Hash the password before saving
         const hashedPassword = await bcrypt.hash(Password, 10);
@@ -47,12 +47,12 @@ router.post("/signin", async (req, res) => {
     try {
         const { EmailorUsername, Password } = req.body;
 
-        if (!EmailorUsername || !Password) {
-            res.render('Signin', { message: "Please provide all the required fields!" });
-        }
-        
         // Log the received data
         console.log('Received Data:', req.body);
+        
+        if (!EmailorUsername || !Password) {
+            return res.render('Signin', { message: "Please provide all the required fields!" });
+        }
         
         // Find the user with the provided email
         const user = await User.findOne({ $or: [{Email: EmailorUsername}, {Username: EmailorUsername}] });
