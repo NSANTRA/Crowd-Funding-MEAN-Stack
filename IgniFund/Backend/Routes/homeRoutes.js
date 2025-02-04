@@ -1,10 +1,17 @@
 const express = require('express');
 const router = express.Router();
 
-// Home Route
-router.get('/', (req, res) => {
-    // res.sendFile(path.join(__dirname, '../Pages', 'Index.html'));
-    res.render("Home", { message: null });
+// Home Page Route
+router.get('/startcampaign', (req, res) => {
+    res.render("StartCampaign", { message: null });
+});
+
+router.get('/donate', (req, res) => {
+    res.render("Donate", { message: null });
+});
+
+router.get('/browse', (req, res) => {
+    res.render("Browse", { message: null });
 });
 
 module.exports = router;

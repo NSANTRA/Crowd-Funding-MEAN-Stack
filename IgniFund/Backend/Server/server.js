@@ -5,6 +5,7 @@ const dotenv = require('dotenv');
 const path = require('path');
 const bodyParser = require('body-parser');
 const authRoutes = require('../Routes/authRoutes');
+const apiRoutes = require('../Routes/apiRoutes');
 const homeRoutes = require('../Routes/homeRoutes');
 
 // Connecting to MongoDB
@@ -26,16 +27,21 @@ app.use(express.static(path.join(__dirname, '../Assets')));
 app.use(express.static(path.join(__dirname, '../Scripts')));
 app.use(express.static(path.join(__dirname, '../Styles')));
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// For Postman Testing
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Using Home Routes
-app.use("/", homeRoutes);
+app.use("/api/v1", apiRoutes);
 
 // Using User Routes
-app.use("/users", authRoutes);
+app.use("/api/v1/users", authRoutes);
+
+// Using Home Routes
+app.use("/api/v1/users/features", homeRoutes);
 
 // Listening on PORT
 app.listen(PORT, () => {
-    console.log(`Server is running on port http://localhost:${PORT}`);
+    console.log(`Server is running on port http://localhost:${PORT}/api/v1`);
 });
