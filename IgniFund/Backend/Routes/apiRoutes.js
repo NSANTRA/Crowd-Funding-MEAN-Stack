@@ -1,9 +1,8 @@
 const express = require('express');
 const router = express.Router();
+const apiController = require('../Controller/apiController');
 
 // API Route
-router.get('/', (req, res) => {
-    res.render("API Home", { message: null });
-});
+router.get('/', apiController.apihomeget);
 
 module.exports = router;

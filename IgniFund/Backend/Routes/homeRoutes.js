@@ -1,17 +1,12 @@
 const express = require('express');
 const router = express.Router();
+const homeController = require('../Controller/homeController');
 
 // Home Page Route
-router.get('/startcampaign', (req, res) => {
-    res.render("StartCampaign", { message: null });
-});
+router.get('/startcampaign', homeController.startcampaignget);
 
-router.get('/donate', (req, res) => {
-    res.render("Donate", { message: null });
-});
+router.get('/donate', homeController.donateget);
 
-router.get('/browse', (req, res) => {
-    res.render("Browse", { message: null });
-});
+router.get('/browse', homeController.browseget);
 
 module.exports = router;
