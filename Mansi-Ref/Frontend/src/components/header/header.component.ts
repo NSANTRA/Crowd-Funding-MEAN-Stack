@@ -6,13 +6,8 @@ import { NgIf } from '@angular/common';
   selector: 'app-header',
   standalone: true,
   templateUrl: './header.component.html',
-<<<<<<< HEAD
-  styleUrl: './header.component.css',
-  imports: [NgIf,RouterLink]
-=======
   styleUrls: ['./header.component.css'],
   imports: [NgIf]
->>>>>>> 66f567337a2db9cacb32aab44e485a9883bb65db
 })
 export class HeaderComponent {
   isHomePage = false;
