@@ -1,1 +1,17 @@
-<p>how-it-works works!</p>
+<section class="how-it-works">
+    <div class="steps-container">
+      <div class="section-title fade-in" appFadeIn>
+        <h2>How IgniFund Works</h2>
+        <p>Your guide to creating and supporting successful campaigns</p>
+      </div>
+  
+      <div *ngFor="let step of steps; let i = index" class="step-card fade-in" [ngClass]="'delay-' + i">
+        <div class="step-number">{{ step.number }}</div>
+        <div class="step-content">
+          <h3>{{ step.title }}</h3>
+          <p>{{ step.description }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  

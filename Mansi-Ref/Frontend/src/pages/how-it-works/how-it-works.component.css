@@ -1,0 +1,83 @@
+.how-it-works {
+  padding: 4rem 1rem 2rem;
+  background: linear-gradient(135deg, #fff5e6, #ff9f43);
+}
+
+.steps-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 1rem; /* Reduced margin */
+}
+
+.section-title h2 {
+  font-size: 2.5rem; /* Reduced font size */
+  color: #1f2937;
+  margin-bottom: 0.2rem;
+}
+
+.section-title p {
+  font-size: 1.5rem; /* Slightly smaller */
+  color: #6b7280;
+  margin-top: 0.2rem;
+  line-height: 1.4; /* Reduced line spacing */
+}
+
+/* Step Card: Smaller height and compact layout */
+.step-card {
+  background: white;
+  border-radius: 0.8rem; /* Smaller border radius */
+  padding: 1.2rem; /* Reduced padding */
+  margin-bottom: 1.5rem; /* Less space between cards */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 1rem; /* Smaller gap */
+  align-items: center;
+  min-height: 100px; /* Smaller height */
+}
+
+.step-number {
+  font-size: 3.5rem; /* Smaller number */
+  font-weight: 650;
+  color: #F4944E;
+  margin-left: 2%;
+  min-width: 60px; /* Smaller space */
+}
+
+.step-content h3 {
+  font-size: 1.75rem; /* Reduced font size */
+  color: #1f2937;
+  margin-bottom: 0.2rem;
+}
+
+.step-content p {
+  color: #6b7280;
+  line-height: 1.5; /* Less spacing */
+  font-size: 1.2rem; /* Smaller text */
+  margin-top: 0.3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .step-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.2rem; /* Even smaller padding on mobile */
+  }
+
+  .step-number {
+    min-width: auto;
+  }
+
+  .step-content h3 {
+    font-size: 1.3rem; /* Smaller for mobile */
+  }
+
+  .step-content p {
+    font-size: 0.9rem; /* More compact */
+  }
+}

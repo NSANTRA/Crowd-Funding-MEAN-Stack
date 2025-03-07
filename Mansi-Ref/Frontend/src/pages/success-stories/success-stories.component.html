@@ -1,1 +1,18 @@
-<p>success-stories works!</p>
+<section class="success-stories">
+    <div class="section-title fade-in" appFadeIn>
+      <h2>Success Stories</h2>
+      <p>Inspiring stories of campaigns that made a difference</p>
+    </div>
+  
+    <div class="story-grid">
+      <div *ngFor="let story of stories" class="story-card fade-in">
+        <img [src]="story.image" [alt]="story.title" class="story-image">
+        <div class="story-content">
+          <h3>{{ story.title }}</h3>
+          <p>{{ story.description }}</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  

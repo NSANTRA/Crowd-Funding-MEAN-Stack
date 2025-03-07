@@ -1,1 +1,50 @@
-<p>campaign-details works!</p>
+<section class="campaign-details"> 
+    <div class="campaign-header">
+        <img [src]="campaign.image" [alt]="campaign.title" class="campaign-image">
+        
+        <!-- Description on the right side -->
+        <div class="campaign-info">
+            <h1>{{ campaign.title }}</h1>
+            <p class="campaign-category">{{ campaign.category }}</p>
+            <p class="campaign-description">{{ campaign.description }}</p>
+        </div>
+    </div>
+
+    <!-- Stats & Donate Button (Styled like Feature Campaigns on Home Page) -->
+    <div class="campaign-stats-container">
+        <div class="campaign-stats">
+            <div class="stats-row">
+                <div class="stat-item">
+                    <span class="stat-value">${{ campaign.raised }}</span>
+                    <span>Raised</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">${{ campaign.goal }}</span>
+                    <span>Goal</span>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-circle">
+                <svg viewBox="0 0 100 100">
+                    <circle class="background" cx="50" cy="50" r="45" pathLength="100"></circle>
+                    <circle class="progress" cx="50" cy="50" r="45" pathLength="100"
+                        [attr.stroke-dasharray]="100"
+                        [attr.stroke-dashoffset]="100 - campaign.progress"></circle>
+                </svg>
+                <div class="progress-text">{{ campaign.progress }}%</div>
+            </div>
+
+            <!-- Donate Button -->
+            <button class="cta-button" (click)="donate()">Donate Now</button>
+        </div>
+    </div>
+
+    <!-- Proof Section (Below Description) -->
+    <div class="campaign-proof">
+        <h3>Proof of Campaign</h3>
+        <div class="proof-gallery">
+            <img *ngFor="let proof of campaign.proofs" [src]="proof" alt="Campaign Proof">
+        </div>
+    </div>
+</section>
