@@ -12,7 +12,7 @@ body {
 
 /* Hero Section */
 .hero {
-  min-height: 100vh;
+  min-height: 70vh;
   background: linear-gradient(135deg, #fff5e6, #ff9f43);
   padding: 0.9rem;
   display: flex;

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd, RouterLink } from '@angular/router';
 import { NgIf } from '@angular/common';
 
 @Component({
@@ -7,7 +7,7 @@ import { NgIf } from '@angular/common';
   standalone: true,
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
-  imports: [NgIf]
+  imports: [NgIf,RouterLink]
 })
 export class HeaderComponent {
   showHome = true;

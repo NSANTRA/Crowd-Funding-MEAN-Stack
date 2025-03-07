@@ -92,3 +92,6 @@
     display: none; /* Remove underline effect */
   }
   
+  li{
+    cursor: pointer;
+  }

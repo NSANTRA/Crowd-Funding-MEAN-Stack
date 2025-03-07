@@ -1,5 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { NgClass, NgFor } from '@angular/common'; 
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-home',
   standalone: true,
