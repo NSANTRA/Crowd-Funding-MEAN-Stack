@@ -6,10 +6,16 @@ import { NgIf } from '@angular/common';
   selector: 'app-header',
   standalone: true,
   templateUrl: './header.component.html',
+<<<<<<< HEAD
   styleUrl: './header.component.css',
   imports: [NgIf,RouterLink]
+=======
+  styleUrls: ['./header.component.css'],
+  imports: [NgIf]
+>>>>>>> 66f567337a2db9cacb32aab44e485a9883bb65db
 })
 export class HeaderComponent {
+  isHomePage = false;
   showHome = true;
   showAbout = true;
   showHowItWorks = true;
@@ -22,6 +28,7 @@ export class HeaderComponent {
   constructor(private router: Router) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
+        this.isHomePage = event.url === '/';
         this.updateNavbarVisibility(event.url);
       }
     });
@@ -38,14 +45,23 @@ export class HeaderComponent {
     this.showLogin = true;
     this.showRegister = true;
 
-    // Hide certain links on specific pages
+    // Home Page: Show only specific navbar items
+    if (this.isHomePage) {
+      this.showHome = false; // Hide "Home" button on home page
+      this.showLogin = false; // Hide Login
+      this.showRegister = false; // Hide Register
+    }
+
+    // Hide login & register buttons on login/register pages
     if (url === '/login' || url === '/register') {
       this.showLogin = false;
       this.showRegister = false;
     }
+
+    // Hide certain links on the dashboard
     if (url === '/dashboard') {
-      this.showBrowse = false; // Hide "Browse" in Dashboard
-      this.showStartCampaign = false; // Hide "Start Campaign"
+      this.showBrowse = false;
+      this.showStartCampaign = false;
     }
   }
 }
