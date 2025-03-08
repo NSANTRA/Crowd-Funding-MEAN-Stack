@@ -11,6 +11,7 @@ import { NgIf } from '@angular/common';
 })
 export class HeaderComponent {
   isHomePage = false;
+  
   showHome = true;
   showAbout = true;
   showHowItWorks = true;
@@ -48,7 +49,7 @@ export class HeaderComponent {
     }
 
     // Hide login & register buttons on login/register pages
-    if (url === '/login' || url === '/register') {
+    if (url === '/login' || url === '/register' || url == '/auth') {
       this.showLogin = false;
       this.showRegister = false;
     }

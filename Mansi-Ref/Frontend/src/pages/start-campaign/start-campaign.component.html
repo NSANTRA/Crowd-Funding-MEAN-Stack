@@ -1,1 +1,52 @@
-<p>start-campaign works!</p>
+<section class="start-campaign">
+    <div class="section-title fade-in" appFadeIn>
+      <h2>Start Your Campaign</h2>
+      <p>Fill in the details below to launch your campaign</p>
+    </div>
+  
+    <form (submit)="handleSubmit()">
+      <div class="campaign-form">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="title">Campaign Title</label>
+            <input type="text" id="title" [(ngModel)]="campaign.title" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select id="category" [(ngModel)]="campaign.category" required>
+              <option value="" disabled selected>Select a category</option>
+              <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+            </select>
+          </div>
+  
+          <div class="form-group form-full">
+            <label for="description">Campaign Description</label>
+            <textarea id="description" [(ngModel)]="campaign.description" rows="4" required></textarea>
+          </div>
+  
+          <div class="form-group">
+            <label for="goal">Funding Goal (₹)</label>
+            <input type="number" id="goal" [(ngModel)]="campaign.goal" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="duration">Campaign Duration (days)</label>
+            <input type="number" id="duration" [(ngModel)]="campaign.duration" required>
+          </div>
+  
+          <div class="form-group form-full">
+            <label for="image">Upload Campaign Image</label>
+            <div class="image-upload">
+              <input type="file" id="image" (change)="handleImageUpload($event)">
+              <p *ngIf="!campaign.image">Click to upload an image</p>
+              <img *ngIf="campaign.image" [src]="campaign.image" alt="Campaign Image Preview" class="image-preview">
+            </div>
+          </div>
+        </div>
+  
+        <button type="submit" class="cta-button">Submit Campaign</button>
+      </div>
+    </form>
+  </section>
+  
